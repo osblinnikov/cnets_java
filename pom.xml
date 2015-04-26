@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.osblinnikov.cnets</groupId>
+  <artifactId>parent</artifactId>
+  <packaging>pom</packaging>
+  <version>0.0.0</version>
+  <name>parent pom</name>
+  <url>http://maven.apache.org</url>
+
+  <modules>
+    <module>runnablesContainer</module>
+    <module>selector</module>
+    <module>mapBuffer</module>
+    <module>readerWriter</module>
+    <module>queue</module>
+    <module>types</module>
+  </modules>
+</project>

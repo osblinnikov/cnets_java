@@ -1,0 +1,19 @@
+{
+"name":"github.com/osblinnikov/cnets/selector",
+"gen":["github.com/osblinnikov/gernet/plugins/buffer","github.com/osblinnikov/gernet/plugins/build"],
+"args": [{
+  "name": "reducableReaders",
+  "type": "reader[]"
+}],
+"depends":[{
+  "name":"github.com/osblinnikov/cnets/types"
+},{
+  "name":"github.com/osblinnikov/cnets/readerWriter"
+},{
+  "name":"github.com/osblinnikov/cnets/queue"
+},{
+  "name":"github.com/osblinnikov/cnets/mapBuffer"
+},{
+  "name":"github.com/osblinnikov/cnets/runnablesContainer"
+}]
+}

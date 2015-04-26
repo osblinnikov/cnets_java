@@ -1,0 +1,4 @@
+{
+"name":"github.com/osblinnikov/cnets/types",
+"gen":["github.com/osblinnikov/gernet/plugins/library","github.com/osblinnikov/gernet/plugins/build"]
+}

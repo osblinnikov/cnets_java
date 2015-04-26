@@ -1,0 +1,21 @@
+args:
+-   name: reducableReaders
+    type: reader[]
+channels: []
+depends:
+-   name: github.com/osblinnikov/cnets/types
+-   name: github.com/osblinnikov/cnets/readerWriter
+-   name: github.com/osblinnikov/cnets/queue
+-   name: github.com/osblinnikov/cnets/mapBuffer
+-   name: github.com/osblinnikov/cnets/runnablesContainer
+emit: []
+gen:
+- github.com/osblinnikov/gernet/plugins/buffer
+- github.com/osblinnikov/gernet/plugins/build
+hide: false
+name: github.com/osblinnikov/cnets/selector
+prefix: /home/oleg/Projects/src/github.com/osblinnikov/cnets-workspace/github.com/osblinnikov/cnets/selector/gernet.json
+props: []
+receive: []
+spawnMode: ''
+topology: []

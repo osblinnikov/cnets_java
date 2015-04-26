@@ -1,0 +1,34 @@
+args:
+-   name: capacity
+    type: int
+    value: '1'
+channels: []
+depends:
+-   name: github.com/osblinnikov/cnets/types
+emit: []
+gen:
+- github.com/osblinnikov/gernet/plugins/library
+- github.com/osblinnikov/gernet/plugins/build
+hide: false
+name: github.com/osblinnikov/cnets/queue
+prefix: /home/oleg/Projects/src/github.com/osblinnikov/cnets-workspace/github.com/osblinnikov/cnets/queue/gernet.json
+props:
+-   name: data
+    size: capacity
+    type: unsigned[]
+    value: null
+-   name: maxIndex
+    size: null
+    type: unsigned
+    value: null
+-   name: head
+    size: null
+    type: unsigned
+    value: null
+-   name: tail
+    size: null
+    type: unsigned
+    value: null
+receive: []
+spawnMode: ''
+topology: []

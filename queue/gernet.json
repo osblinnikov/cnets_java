@@ -1,0 +1,26 @@
+{
+"name":"github.com/osblinnikov/cnets/queue",
+"gen":["github.com/osblinnikov/gernet/plugins/library","github.com/osblinnikov/gernet/plugins/build"],
+"args": [{
+  "name": "capacity",
+  "type": "int",
+  "value": "1"
+}],
+"props":[{
+  "name":"data",
+  "type":"unsigned[]",
+  "size":"capacity"  
+},{
+  "name":"maxIndex",
+  "type":"unsigned"
+},{
+  "name":"head",
+  "type":"unsigned"
+},{
+  "name":"tail",
+  "type":"unsigned"
+}],
+"depends":[{
+  "name":"github.com/osblinnikov/cnets/types"
+}]
+}

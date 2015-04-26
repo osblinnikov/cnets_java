@@ -1,0 +1,14 @@
+args: []
+channels: []
+depends: []
+emit: []
+gen:
+- github.com/osblinnikov/gernet/plugins/library
+- github.com/osblinnikov/gernet/plugins/build
+hide: false
+name: github.com/osblinnikov/cnets/types
+prefix: /home/oleg/Projects/src/github.com/osblinnikov/cnets-workspace/github.com/osblinnikov/cnets/types/gernet.json
+props: []
+receive: []
+spawnMode: ''
+topology: []
