@@ -1,0 +1,12 @@
+args: []
+channels: []
+depends: []
+emit: []
+gen:
+- github.com/osblinnikov/cnets_java/generators/build
+hide: false
+name: github.com/osblinnikov/cnets_java
+props: []
+receive: []
+spawnMode: '0'
+topology: []

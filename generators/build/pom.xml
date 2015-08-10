@@ -1,17 +1,23 @@
+<%
+import sys
+sys.path.insert(0, a.parserPath)
 
+import parsing_java
+p = reload(parsing_java)
+p.parsingGernet(a)%>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 <modelVersion>4.0.0</modelVersion>
-<groupId>com.github.osblinnikov</groupId>
-<artifactId>cnets_java</artifactId>
+<groupId>${a.domainName}</groupId>
+<artifactId>${a.className}</artifactId>
 <version>1.0.0</version>
 <packaging>jar</packaging>
 
 
-<name>cnets_java</name>
-<description>cnets_java</description>
-<url>http://github.com/osblinnikov/cnets_java</url>
+<name>${a.className}</name>
+<description>${a.className}</description>
+<url>http://${a.domainPath}</url>
 
 <licenses>
     <license>
@@ -22,17 +28,17 @@
 </licenses>
 
 <scm>
-    <url>http://github.com/osblinnikov/cnets_java</url>
-    <connection>scm:git:https://github.com/osblinnikov/cnets_java.git</connection>
+    <url>http://${a.domainPath}</url>
+    <connection>scm:git:https://${a.domainPath}.git</connection>
 </scm>
 <developers>
     <developer>
-        <id>github</id>
-        <name>github</name>
-        <email>dev@github.com</email>
-        <url>http://github.com/devs</url>
-        <organization>github</organization>
-        <organizationUrl>http://github.com</organizationUrl>
+        <id>${a.company}</id>
+        <name>${a.company}</name>
+        <email>dev@${a.companyDomain}</email>
+        <url>http://${a.companyDomain}/devs</url>
+        <organization>${a.company}</organization>
+        <organizationUrl>http://${a.companyDomain}</organizationUrl>
         <roles>
             <role>architect</role>
             <role>developer</role>
@@ -51,13 +57,11 @@
     import cogging as c
     c.tpl(cog,templateFile,c.a(prefix=configFile))
     ]]]-->
-
-
-    <!--[[[end]]] (checksum: e1c06d85ae7b8b032bef47e42e4c08f9)-->
+    <!--[[[end]]]-->
 </dependencies>
 
 <build>
-    <finalName>cnets_java</finalName>
+    <finalName>${a.className}</finalName>
     <pluginManagement>
         <plugins>
             <plugin>
