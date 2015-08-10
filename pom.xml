@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 <modelVersion>4.0.0</modelVersion>
 <groupId>com.github.osblinnikov</groupId>
-<artifactId>cnets_java</artifactId>
+<artifactId>cnetsjava</artifactId>
 <version>1.0.0</version>
 <packaging>jar</packaging>
 
 
-<name>cnets_java</name>
-<description>cnets_java</description>
-<url>http://github.com/osblinnikov/cnets_java</url>
+<name>cnetsjava</name>
+<description>cnetsjava</description>
+<url>http://github.com/osblinnikov/cnetsjava</url>
 
 <licenses>
     <license>
@@ -22,8 +22,8 @@
 </licenses>
 
 <scm>
-    <url>http://github.com/osblinnikov/cnets_java</url>
-    <connection>scm:git:https://github.com/osblinnikov/cnets_java.git</connection>
+    <url>http://github.com/osblinnikov/cnetsjava</url>
+    <connection>scm:git:https://github.com/osblinnikov/cnetsjava.git</connection>
 </scm>
 <developers>
     <developer>
@@ -49,7 +49,7 @@
     </dependency>
     <!--[[[cog
     import cogging as c
-    c.tpl(cog,templateFile,c.a(prefix=configFile))
+    c.tpl(cog,templateFile,c.a(prefix=configFile,module=configModule))
     ]]]-->
 
 
@@ -57,7 +57,7 @@
 </dependencies>
 
 <build>
-    <finalName>cnets_java</finalName>
+    <finalName>cnetsjava</finalName>
     <pluginManagement>
         <plugins>
             <plugin>

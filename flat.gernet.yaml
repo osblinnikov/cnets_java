@@ -5,6 +5,25 @@ emit: []
 gen:
 - github.com/osblinnikov/cnets_java/generators/build
 hide: false
+modules:
+-   args:
+    - parent github.com/osblinnikov/cnetsjava/runnablesContainer*
+    - maxNumberOfKernels unsigned
+    - threadId unsigned
+    - countOfThreads unsigned
+    depends:
+    -   name: github.com/osblinnikov/cnets_java/selector
+    -   name: github.com/osblinnikov/cnets_java/runnablesContainer
+    -   name: github.com/osblinnikov/cnets_java/readerWriter
+    -   name: github.com/osblinnikov/cnets_java/types
+    gen:
+    - github.com/osblinnikov/cnets_java/generators/kernel
+    name: dispatchKernel
+    props:
+    - readers reader[1]
+    - readerSelector reader
+    - kernels github.com/osblinnikov/cnetsjava/dispatchKernel/runnables[1]
+    spawnMode: 1
 name: github.com/osblinnikov/cnets_java
 props: []
 receive: []

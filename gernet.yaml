@@ -1,2 +1,23 @@
 name: github.com/osblinnikov/cnets_java
-gen: [github.com/osblinnikov/cnets_java/generators/build]
+gen:
+- github.com/osblinnikov/cnets_java/generators/build
+modules:
+-
+  name: dispatchKernel
+  args:
+  -   "parent github.com/osblinnikov/cnetsjava/runnablesContainer*"
+  -   "maxNumberOfKernels unsigned"
+  -   "threadId unsigned"
+  -   "countOfThreads unsigned"
+  props:
+  -   "readers reader[1]"
+  -   "readerSelector reader"
+  -   "kernels github.com/osblinnikov/cnetsjava/dispatchKernel/runnables[1]"
+  depends:
+  -   name: github.com/osblinnikov/cnets_java/selector
+  -   name: github.com/osblinnikov/cnets_java/runnablesContainer
+  -   name: github.com/osblinnikov/cnets_java/readerWriter
+  -   name: github.com/osblinnikov/cnets_java/types
+  spawnMode: 1
+  gen:
+  - github.com/osblinnikov/cnets_java/generators/kernel
